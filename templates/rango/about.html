@@ -6,13 +6,14 @@
 {% endblock %}
 
 {% block body_block %}
-		<h1>Rango says...</h1>
-		<div>
-			Here is the about page.<br />
-			This tutorial has been put together by {{yourname}}<br />
-		</div>
-		<div>
-			<img src="{% static "images/train.jpg" %}" alt="Picture of a Train" /> <!-- New line -->
-			<img src="{{MEDIA_URL}}cat.jpg" alt="Picture of a Cat" /> <!-- New line -->
-		</div>
+    <h1>Rango says...</h1>
+    <div>
+        Here is the about page.<br/>
+        This tutorial has been put together by {{ yourname }}<br/>
+    </div>
+    <div>
+        <img src="{% static "images/train.jpg" %}" alt="Picture of a Train"/> <!-- New line -->
+        <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat"/> <!-- New line -->
+    </div>
+    <p>visits: {{ visits }}</p>
 {% endblock %}
